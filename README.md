@@ -6,7 +6,8 @@ Aquest repositori conté tots els arxius emprats per a l'elaboració de la Pràc
 
 Directori `dataset`:
 
-Conté els datasets originals, així com les modificacions i agregacions fetes per mi. També conté els Jupyter Notebooks emprats per al procés de generació i exploració de les dades.
+Conté els datasets originals (["Deaths due to air pollution"](https://www.kaggle.com/datasets/akshat0giri/death-due-to-air-pollution-19902017),
+ ["GDP per capita"](https://data.worldbank.org/indicator/NY.GDP.PCAP.CD)), així com les modificacions i agregacions fetes per mi. També conté els Jupyter Notebooks emprats per al procés de generació i exploració de les dades.
 
 Directori `src`:
 
