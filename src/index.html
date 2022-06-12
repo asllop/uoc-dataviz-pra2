@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>PRA2 Visualització de dades - UOC</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/d3.v4.min.js"></script>
+    <script src="js/d3-scale-chromatic.v1.min.js"></script>
+    <script src="js/d3-geo-projection.v2.min.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <!-- Principal -->
+    <div id="pantalla_0" class="pantalla">
+        <div class="main_titol">
+            <h1>L'aire mata</h2>
+            <p>La contaminació de l'aire d'origen humà mata milions de persones cada any al mon, però no afecta igual a totes les parts del globus. Hi ha grans diferències per països i nivells de desenvolupament econòmic. Tot seguit explorarem les tendències que presenta.</p>
+            <br><br>
+            <h3>Autor:</h3>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Andreu Santarén Llop</p>
+            <h3>Fonts de dades:</h3>
+            <p><a href="https://www.kaggle.com/datasets/akshat0giri/death-due-to-air-pollution-19902017">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Death Due to Air Pollution" de Kaggle</a></p>
+            <p><a href="https://data.worldbank.org/indicator/NY.GDP.PCAP.CD">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Producte Interior Brut del Banc Mundial</a></p>
+        </div>
+        <button class="next" onclick="go_to_map()">Següent</button>
+    </div>
+
+    <!-- Mapa -->
+    <div id="pantalla_1" class="pantalla">
+        <div class="titol">
+            <h1>Les terres maleïdes</h2>
+            <p>Algunes regions del planeta pateixen una enorme afectació, especialment l'Àfrica i el sud-est de l'Àsia. Aquestes regions, a més, són de les més pobres del mon.</p>
+        </div>
+        <svg id="mapa" width="600" height="300"></svg>
+        <input type="range" min="1990" max="2017" value="2004" class="slider" onchange="yearChange(this)">
+        <button class="next" onclick="go_to_scatter()">Següent</button>
+        <button class="prev" onclick="go_to_main()">Anterior</button>
+        <p id="any">Any 2004</p>
+        <p class="map_desc">
+            Mostrem en un mapa bivariant el nombre de morts per pol·lució de l'aire cada 100 mil habitants i el PIB per càpita.
+        </p>
+    </div>
+
+    <!-- Dispersió -->
+    <div id="pantalla_2" class="pantalla">
+        <div class="titol">
+            <h1>El PIB ho és tot</h2>
+            <p>La riquesa per càpita d'un país en determina com els afecta la contaminació de l'aire. Aquí veiem la mitjana de morts per cada 100 mil habitants del període 1990-2017 front al PIB per càpita de cada país.</p>
+        </div>
+        <svg id="scatter" width="600" height="330"></svg>
+        <button class="next" onclick="go_to_bars()">Següent</button>
+        <button class="prev" onclick="go_to_map()">Anterior</button>
+    </div>
+
+    <!-- Barres -->
+    <div id="pantalla_3" class="pantalla">
+        <div class="titol">
+            <h1>La frontera dels 50</h2>
+            <p>En el grup que pateixen menys de 50 morts per cada 100 mil habitants només hi trobem països rics.</p>
+        </div>
+        <svg id="bar" width="600" height="370"></svg>
+        <button class="prev" onclick="go_to_scatter()">Anterior</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+.pantalla {
+    height: 768px;
+    width: 1024px;
+    border-color: silver;
+    border-width: 2px;
+    border-style: solid;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.main_titol {
+    height: 300px;
+    width: 600px;
+    position:absolute;
+    left:200px;
+    top:160px;
+}
+
+.main_titol > p {
+    font-size: large;
+}
+
+.titol {
+    height: 150px;
+    width: 600px;
+    position:absolute;
+    left:50px;
+    top:20px;
+}
+
+h1, h2, h3, p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: darkgoldenrod;
+}
+
+#mapa {
+    position:absolute;
+    left:50px;
+    top:210px;
+}
+
+.slider {
+    position:absolute;
+    left:50px;
+    top:580px;
+    width: 600px;
+}
+
+#any {
+    position:absolute;
+    left:320px;
+    top:600px;
+}
+
+.map_desc {
+    height: 150px;
+    width: 250px;
+    position:absolute;
+    left:720px;
+    top:310px;
+}
+
+#scatter, #bar {
+    position:absolute;
+    left:200px;
+    top:250px;
+}
+
+button {
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    background-color: darkgoldenrod;
+    position:absolute;
+}
+
+.next {
+    left:880px;
+    top:700px;
+}
+
+.prev {
+    left:20px;
+    top:700px;
+}
+
+#pantalla_1, #pantalla_2, #pantalla_3 {
+    display: none;
+}
+
+a:link, a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: darkgoldenrod;
+    text-decoration: none;
+}
